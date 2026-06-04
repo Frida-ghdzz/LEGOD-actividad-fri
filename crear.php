@@ -58,9 +58,9 @@ var_dump($lista_temas);
                     <!-- PHP FOREACH --> 
                     <?php
                     if(count($lista_temas) > 0 ) {
-                        foreach($lista_temas as tema){
-                            $id_tema $tema["theme_id"];
-                            echo "<option value =' $id_tema>" . $tema[name] . "</echo>"
+                        foreach($lista_temas as $tema){
+                            $id_tema = $tema["theme_id"];
+                            echo "<option value =' $id_tema>" . $tema[name] . "</echo>";
                         }
                     }
                     ?>
