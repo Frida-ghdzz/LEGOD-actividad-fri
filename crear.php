@@ -12,7 +12,7 @@ if($squery){
         //echo "<br>"; echo "<br>";
     }
 }
-var_dump($lista_temas);
+//var_dump($lista_temas);
 ?>
 
 <!DOCTYPE html>
@@ -59,8 +59,7 @@ var_dump($lista_temas);
                     <?php
                     if(count($lista_temas) > 0 ) {
                         foreach($lista_temas as $tema){
-                            $id_tema = $tema["theme_id"];
-                            echo "<option value =' $id_tema>" . $tema[name] . "</echo>";
+                            echo "<option value ='" .$tema["theme_id"] . "'>" . $tema["name"] . "</option>";
                         }
                     }
                     ?>
